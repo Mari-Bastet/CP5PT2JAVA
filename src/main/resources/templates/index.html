@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Brinquedos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fce4ec; /* Rosa claro */
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #ff5722; /* Laranja */
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+        a {
+            display: inline-block;
+            background-color: #fff;
+            color: #ff5722; /* Laranja */
+            border: 2px solid #4caf50; /* Verde */
+            border-radius: 10px;
+            padding: 10px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        a:hover {
+            background-color: #ff5722; /* Laranja */
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista de Brinquedos</h1>
+<a class="button" th:href="@{/brinquedos/adicionarBrinquedo}">Incluir Brinquedo</a>
+
+    <ul>
+        <li th:each="brinquedo : ${brinquedos}">
+            <a th:href="@{/brinquedos/atualizarBrinquedo/{id}(id=${brinquedo.id})}" th:text="${brinquedo.nome}">Nome do Brinquedo</a>
+        </li>
+    </ul>
+
+</body>
+</html>

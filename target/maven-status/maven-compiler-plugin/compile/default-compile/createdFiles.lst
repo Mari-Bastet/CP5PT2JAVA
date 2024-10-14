@@ -1,0 +1,10 @@
+checkpointjava\cpjava\CpjavaApplication.class
+checkpointjava\cpjava\controller\BrinquedoController.class
+checkpointjava\cpjava\domain\Usuario.class
+checkpointjava\cpjava\repository\BrinquedoRepository.class
+checkpointjava\cpjava\config\SecurityConfig.class
+checkpointjava\cpjava\domain\Brinquedo.class
+checkpointjava\cpjava\controller\LoginController.class
+checkpointjava\cpjava\repository\UsuarioRepository.class
+checkpointjava\cpjava\controller\HomeController.class
+checkpointjava\cpjava\WebConfig.class

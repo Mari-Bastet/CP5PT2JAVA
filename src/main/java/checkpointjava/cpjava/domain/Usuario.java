@@ -1,6 +1,8 @@
 package checkpointjava.cpjava.domain;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.SequenceGenerator;
 import jakarta.persistence.Table;
@@ -18,6 +20,7 @@ public class Usuario {
 	
 
 	@Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SEQ")
 	private Long id;
 	private String username;
 	private String senha;

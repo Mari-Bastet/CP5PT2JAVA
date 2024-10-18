@@ -41,26 +41,47 @@
             background-color: #e64a19; 
             border-color: #e64a19;
         }
+        .register a {
+            font-size: 14px;
+            color: #333;
+            text-decoration: none;
+        }
+        .register a:hover {
+            color: #ff5722;
+        }
+        .text-center.redText {
+            color: red;
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
-    <h1>Login</h1>
-    <div class="error-box" th:if="${param.error}">
-        <p>Usuário ou senha inválidos!</p>
-    </div>
-    <form th:action="/bri/login" method="post">
-        <p>
-            <label for="username">Usuário:</label>
-            <input type="text" id="username" name="username" required>
-        </p>
-        <p>
-            <label for="password">Senha:</label>
-            <input type="password" id="password" name="password" required>
-        </p>
-        <p>
-            <button type="submit">Entrar</button>
-        </p>
-    </form>
-    <p>Não tem uma conta? <a th:href="/signup">Crie uma aqui!</a></p>
+    <section>
+        <form action="/lojabrinquedos/bri/login" method="post">
+            <h1>Login</h1>
+
+            <div class="dialog-row">
+                <label th:if="${param.error}" th:text="${session['SPRING_SECURITY_LAST_EXCEPTION'].message}" class="text-center redText"></label>                   
+            </div>
+
+            <p>
+                <label for="">Usuário:</label>
+                <input name="username" id="username" type="text" required>
+            </p>
+
+            <p>
+                <label for="">Senha:</label>
+                <input name="password" type="password" id="senha" required>
+            </p>
+
+            <p>
+                <button type="submit">Entrar</button>
+            </p>
+
+            <div class="register">
+                <p>Não possui conta? <a href="/lojabrinquedos/bri/signup">Cadastre-se!</a></p>
+            </div>
+        </form>
+    </section>
 </body>
 </html>

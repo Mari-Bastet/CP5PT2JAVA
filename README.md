@@ -7,11 +7,12 @@ Breno Giacoppini - RM98695
 
 ### Relatório do Projeto
 O projeto visa utilizar os conhecimentos de JPA e aplicações SpringBoot, com a finalidade de cadastrar um briquedo e recuperar as informações do banco de dados, exibindo a persistência dos dados.
+Nessa nova etapa, visa utilizar os recursos de segurança do Spring Security para cadastro, autenticação e acessos de usuários.
 
 ### DEPLOY
-Disponível em: https://cp4pt2java.onrender.com/lojabrinquedos/
+Disponível em: [https://cp4pt2java.onrender.com/lojabrinquedos/](https://cp5pt2java.onrender.com)
 
-GET: https://cp4pt2java.onrender.com/lojabrinquedos/brinquedos/{ID_BRINQUEDO} POST: https://cp4pt2java.onrender.com/lojabrinquedos/brinquedos/adicionarBrinquedo PUT: https://cp4pt2java.onrender.com/lojabrinquedos/brinquedos/atualizarBrinquedo DELETE: https://cp4pt2java.onrender.com/lojabrinquedos/brinquedos/{ID_BRINQUEDO}
+GET: https://cp5pt2java.onrender.com/lojabrinquedos/brinquedos/{ID_BRINQUEDO} POST: https://cp5pt2java.onrender.com/lojabrinquedos/brinquedos/adicionarBrinquedo PUT: https://cp5pt2java.onrender.com/lojabrinquedos/brinquedos/atualizarBrinquedo DELETE: https://cp5pt2java.onrender.com/lojabrinquedos/brinquedos/{ID_BRINQUEDO}
 
 ![image](https://github.com/user-attachments/assets/16b2448a-a54b-4c19-b26d-4bcd63b1ac79)
 
